@@ -1,0 +1,2 @@
+# SbtDemo
+sbt scala demo
