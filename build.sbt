@@ -19,3 +19,17 @@ lazy val helloCore = (project in file("core"))
     libraryDependencies ++= Seq(gigahorse, playJson),
     libraryDependencies += scalaTest % Test,
   )
+
+lazy val SimpleApp = (project in file("SimpleApp"))
+  .settings(
+    name := "Simple App",
+    version := "0.1",
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.4",
+  )
+
+lazy val wordcount = (project in file("wordcount"))
+  .settings(
+    name := "word count network",
+    version := "0.1",
+    libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.4",
+  )
